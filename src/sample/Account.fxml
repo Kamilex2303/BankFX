@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="accountgrid" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #cc6600;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AccountController">
+   <children>
+      <Label layoutX="170.0" layoutY="52.0" text="Account">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <Label fx:id="namelabel" layoutX="244.0" layoutY="122.0" prefHeight="16.0" prefWidth="112.0" style="-fx-border-radius: 50%; -fx-background-color: white; -fx-alignment: center;" />
+      <Circle fill="#c8e1f4" layoutX="126.0" layoutY="243.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#c8e1f4" layoutX="469.0" layoutY="243.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="68.0" layoutY="173.0" prefHeight="37.0" prefWidth="112.0" style="-fx-alignment: center;" text="Main account : " />
+      <Label layoutX="419.0" layoutY="184.0" text="Save account : " />
+      <TextArea fx:id="balancemain" layoutX="68.0" layoutY="243.0" prefHeight="57.0" prefWidth="112.0" />
+      <TextArea fx:id="balanceplus" layoutX="414.0" layoutY="243.0" prefHeight="57.0" prefWidth="112.0" />
+      <MenuBar layoutX="60.0" layoutY="-108.0" prefHeight="29.0" prefWidth="515.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Transakcje">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Historia">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pożyczka">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Kontakt">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Oszczędzanie">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Wyloguj">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="7.0" layoutY="26.0" mnemonicParsing="false" onAction="#transaction" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: orange;" text="Transaction" />
+      <Button layoutX="127.0" layoutY="26.0" mnemonicParsing="false" onAction="#history" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: orange;" text="History" />
+      <Button layoutX="247.0" layoutY="26.0" mnemonicParsing="false" onAction="#saving" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: orange;" text="Saving" />
+      <Button layoutX="369.0" layoutY="26.0" mnemonicParsing="false" onAction="#contact" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: orange;" text="Contact" />
+      <Button layoutX="485.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: orange;" text="Logout" />
+      <Label fx:id="accnumber" alignment="CENTER" layoutX="244.0" layoutY="157.0" prefHeight="16.0" prefWidth="112.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
